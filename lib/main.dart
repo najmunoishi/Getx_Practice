@@ -10,10 +10,11 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
+  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return GetMaterialApp(
-      title: "Getx_Reactive_Approch",
+      title: "Getx_Simple_Approch",
       debugShowCheckedModeBanner: false,
       home: IncrementScreen(),
     );
