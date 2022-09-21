@@ -17,7 +17,7 @@ class IncrementScreen extends StatelessWidget {
             Obx(() => Text("The Value is ${_controller.value}")),
             GestureDetector(
                 child: Text(
-                  "count",
+                  "+",
                   textAlign: TextAlign.center,
                 ),
                 onTap: () {
