@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: "Getx_Reactive_Approch",
       debugShowCheckedModeBanner: false,
-      home: IncrementScreen(),
+      home: DecrementScreen(),
     );
   }
 }
