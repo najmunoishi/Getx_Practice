@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+// ignore: unnecessary_import
 import 'package:get/get_core/src/get_main.dart';
 import 'package:getx/controller/controller.dart';
 
@@ -15,12 +16,12 @@ class IncrementScreen extends StatelessWidget {
           children: [
             //$ string interpulation.
             Obx(() => Text("The Value is ${_controller.value}")),
-            GestureDetector(
-                child: Text(
-                  "+",
+            ElevatedButton(
+                child: const Text(
+                  "Decrement",
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {
+                onPressed: () {
                   _controller.incrementValue();
                 })
           ],

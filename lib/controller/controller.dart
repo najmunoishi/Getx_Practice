@@ -6,6 +6,6 @@ class IncrementController extends GetxController {
   var value = 0.obs;
 
   void incrementValue() {
-    value++;
+    value--;
   }
 }
