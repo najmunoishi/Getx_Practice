@@ -19,15 +19,16 @@ class IncrementScreen extends StatelessWidget {
               builder: (controller) {
                 return Text(
                   "The Value is ${controller.value}",
+                  style: const TextStyle(fontSize: 20),
                 );
               },
             ),
-            GestureDetector(
-                child: Text(
-                  "count",
+            ElevatedButton(
+                child: const Text(
+                  "Increment",
                   textAlign: TextAlign.center,
                 ),
-                onTap: () {
+                onPressed: () {
                   _controller.incrementValue();
                 })
           ],
